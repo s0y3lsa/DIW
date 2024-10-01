@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+
+        <legend>Informacion personal</legend>
+
+        <fieldset>
+            <legend>Datos Basicos</legend>
+            <p><label>Nombre: <input type="text" placeholder="Escribe tu nombre"></label></p>
+            <!--Placeholder poner texto en la casilla blanca-->
+           <p> <label>Apellido: <input type="text"  placeholder="Escribe tu apellido"></label></p>
+           <p> <label>Correo Electronico:<input type="text"></label></p>
+            <label>Telfono:<input type="text" placeholder="600000000"></label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Adicionales</legend>
+            
+                <h4>Genero</h4>
+                
+                <p><label>Masculino<input type="radio" name="genero"> </label></p>
+                <p><label>Femenino<input type="radio"  name="genero"> </label></p>
+                <!--Para calendario -->
+                <label>Fecha de nacimiento: <input type="date"></input></label>
+                <!--Data List-->
+                <p>Nacionalidad:
+                <datalist id="nacionalidad">
+                    <option value="España "></option>
+                    <option value="America"></option>
+                    <option value="Francia"></option>
+                </datalist>
+                <input name="nac" list="nacionalidad">
+                </p>
+        </fieldset>
+
+        <fieldset>
+            <fieldset> 
+                <legend>Interes y habilidades</legend>
+
+                <legend>Interes</legend>
+                <p>Selecciona tus intereses: </p>
+                <p><label>Deporte<input type="checkbox" name="interes"></label></p>
+                <p><label>Música<input type="checkbox"  name="interes"></label></p>
+                <p><label>Arte<input type="checkbox" name="interes"></label></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Habilidades</legend>
+                <p>Selecciona tus habilidades</p>
+                <!--Caja de texto desplegada con opciones-->
+                <select multiple>
+                    <option>Programacion</option>
+                    <option>Diseño</option>
+                    <option>Gestion de proyectos</option>
+                    <option>Comunicacion</option>
+                </select>
+            </fieldset>
+            
+
+        </fieldset>
+
+    </fieldset>
+    
+    <p>Comentarios Addicionales</p>
+    <!--Caja de texto para escribir-->
+    <textarea name="Comentarios" row="10">Escribe aqui tus comentarios. . .</textarea>
+    <!--Boton enviar datos-->
+   <p><input type="submit"></p> 
+    <!--Boton limpiar datos-->
+    <p><input type="reset"></p>
+
+</body>
+</html>
