@@ -1,0 +1,22 @@
+
+body{
+    background-color: rgb(45, 45, 107);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cuenta{
+    /** **/
+    background-color: rgb(103, 169, 185);
+
+    /**linea roja **/
+    border-bottom: 5px solid red;
+    /**linea anchura y altura **/
+    width: 90% ;
+    height: 70px;
+}
+
+form{
+
+}
