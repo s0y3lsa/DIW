@@ -1,0 +1,119 @@
+
+/*a. Estiliza todas las etiquetas h1 para que tengan una tipografía Arial, tamaño 36px y 
+color #333333 */
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 36px;
+    color:#333333;
+}
+
+/*b. Aplica a las etiquetas h2 una tipografía Verdana, tamaño 24px y color #1ª5eab */
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color: #1A5eab;
+}
+
+/*c. Diseña los  párrafos p  con  una  tipografía Times  New  Roman, tamaño  14px y  color 
+#444444 */
+
+p{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/*d. Utiliza  el  selector  de  clase  .categories  para  dar  un  margen  superior  e  inferior  de 
+20px a la lista de categorías */
+
+.categories{
+    margin: 20px 0;
+}
+
+/* e. Usa  el  selector  de  ID  #main-header  para  añadir  un  color  de  fondo  #f8f8f8  al 
+encabezado principal */
+
+#main-header{
+    background-color: #f8f8f8;
+}
+
+/* f. Con selectores descendientes, aplica un margen de 15px y un borde inferior de 1px 
+sólido #dddddd a los header dentro de article*/
+
+article header{
+    margin-left: 15px ;
+    border-bottom: solid 1px #dddd;
+
+}
+
+/*g.Implementa  selectores  de  hijo  directo  para  solo  las  section  de  article  tengan  un 
+padding de 20px  */
+
+article > section{
+    padding: 20px;
+}
+
+
+/*h. Estiliza los enlaces dentro de .categories para que cambien a color #ff0000 cuando 
+se pasa el ratón sobre ellos*/
+.categories a:hover{
+    background-color: #77c993;
+}
+
+/*i. Cambia las filas impares de la tabla con un color de fondo  #f2f2f2. Puedes utilizar 
+:nth-child(odd)*/
+
+tr:nth-child(odd){
+    background-color: #7faa81;
+}
+
+/*j. Utiliza frst-letter para aumentar el tamaño y cambiar el color de la primera letra de 
+cada párrafo a 22px y #1a5eab respectivamente */
+
+p::first-letter{
+    font-size: 22px;
+    color:#1a5eab;
+}
+
+/*k. Implementa ::before para añadir un guion antes del título de cada artículo. */
+
+h1::before{
+    content: '-';
+}
+
+/*l. Diseña un estilo completo para el blog que incluya:  */
+
+/*1. Un menú de navegación con iconos decorativos antes de cada categoría*/
+nav a::before{
+    content:'🔗';
+}
+/*2. Títulos de artículos con pseudo-elementos decorativos*/
+
+article h1{
+
+}
+/*3. Cambios de estilo en los artículos al pasar el ratón */
+
+article:hover{
+    background-color: rgb(142, 142, 197);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

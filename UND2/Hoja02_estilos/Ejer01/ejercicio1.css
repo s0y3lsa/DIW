@@ -1,0 +1,104 @@
+/*Aplicar el color de fondo al body y define un tipo de fuente generico  */
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*Cambia el color de texto en el título del header.*/
+header h1{
+    color:blue;
+
+}
+
+.leer-mas{
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+}
+
+/*Pasar el cursor por encima y que cambie */
+.leer-mas:hover{
+    background-color: blue;
+    color: lightgrey;
+}
+
+
+/*i, Estiliza los enlaces que están dentro de elementos de lista en el menú de 
+navegación y los que están en listas dentro de los artículos para que tengan 
+un color y estilo específicos */
+
+nav ul li a{
+
+    color: #e22012;
+    text-decoration: none;
+}
+.articulos ul li a{
+    color:#0a5f07;
+    text-decoration: none;
+}
+
+
+/*j,Estiliza solo los elementos de la lista que son hijos directos de la lista que 
+están dentro del aside. (Utiliza cursiva */
+
+.barra-lateral > ul > li{
+    font-style: italic;
+}
+
+/*k,Estiliza los elementos de la lista que son hijos directos de la lista que están 
+dentro  del  menú  de  navegación,  cambiando  su  color  de  fondo  al  pasar  el 
+ratón.*/
+
+nav > ul > li:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+/*l,Aplica un estilo de borde a los fieldset que son hijos directos de formularios */
+
+form > fieldset{
+    border: 3px dotted #050005;
+}
+
+
+/*m. Cambia  el  color  de  fondo  del  artículo  que  sigue  al  primer  artículo  de  la 
+sección que se encuentra dentro del cuerpo del documento.  */
+.articulos article + article{
+    background-color: rgb(233, 204, 236);
+}
+
+/*n. Estiliza los label que siguen a input dentro del formulario  */
+form input + label{
+    font-weight: bold;
+}
+
+/*o. Cambiar  el  tamaño  de  los  input  de  tipo  radio  que  son  precedidos  por  un 
+label.*/
+label input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+/*p. Haz que los enlaces dentro del footer cambien de color cuando se pasa rl 
+ratón por encim*/
+footer a:hover{
+    color: antiquewhite;
+    background-color: firebrick;
+}
+
+/*q. Estiliza el enlace dentro del footer que contiene el atributo href que empieza 
+con mailto, cambiando el tamaño, el tipo de fuente, el estilo y el color*/
+footer a[href^="mailto:"]{
+    font-size: 1.2em;
+    font-style:italic;
+    color:rgb(66, 81, 167);
+}
+/*r. Haz que los elementos de la lista que están dentro del aside y contienen un 
+strong tengan un estilo diferente en el texto del comentario (el string)*/
+aside ul li strong{
+    font-weight: bold;
+    color: #ff9800;
+}
+
+
+/**/

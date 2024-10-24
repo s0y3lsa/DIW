@@ -1,9 +1,22 @@
 
 body{
-    background-color: rgb(45, 45, 107);
-    color: white;
+    
+     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+#formulario{
+    background-color: rgb(63, 63, 150);
+    height: 300%;
+    width: 60%;
+    
+    /**borde para el formulario **/
+    border:solid 5px;
+    border-color: rgb(0, 0, 0);
+
 }
 
 #cuenta{
