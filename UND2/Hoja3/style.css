@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(19, 150, 19);
+}
+
+#cabecera{
+
+    background-color: antiquewhite;
+    border: 5px solid ;
+    
+}
+
+#imgCabecera{
+    height: 150px;
+    width: 200px;
+}
+
+#seccionDerecha{
+    width: 20%;
+    color: white;
+}
+#seccionDerecha p{
+   
+    text-align: center;
+    
+}
+#seccionCentral{
+
+    background-color: antiquewhite;
+    
+}
