@@ -1,0 +1,59 @@
+
+/* 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-aling:center;
+}
+
+aside{
+    position: sticky;
+    top:20px;
+    background-color: azure;
+    padding: 10px;
+    widht:200px;
+    float: left;
+    margin-left: 20px ;
+}
+main{
+    margin-left: 250px;
+    padding: 20px;
+}*/
+
+.principal{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.Bloque1{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    background-color: orange;
+    top:0;
+    left: o;
+}
+.Bloque2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(101, 101, 214);
+    top: 40px;
+    left: 40px;
+}
+.Bloque3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(182, 182, 226);
+    top: 60px;
+    left: 80px;
+}
