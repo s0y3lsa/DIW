@@ -1,0 +1,36 @@
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#caja1 {
+    display: flex;
+    height: 100vh; /* Todo el alto de la ventana */
+    gap: 2px; /* Espacio entre sidebar y contenido */
+    background-color: #82b1ff;
+    height: auto; /* Ajusta la altura según el contenido */
+}
+#sidebar{
+    flex: 1; /* Sidebar ocupa 1 parte de ancho */
+    background-color: #747a85;
+    list-style: none;
+    padding: 12px 24px; /* Espaciado interno */
+   
+}
+#sidebar li {
+    margin-bottom: 10px; /* Espaciado entre elementos del menú */
+}
+#sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+#content {
+    flex: 4; /* Contenido ocupa 4 partes de ancho */
+    background-color: #ce7459;
+    padding: 12px 24px; /* Espaciado interno */
+    color: #000;
+}

@@ -1,0 +1,20 @@
+#cajas{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(177, 230, 230);
+}
+
+#cajas li{
+    flex:1;
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+/* 
+display: flex; organiza los elementos en una fila o columna y
+hace que se ajusten automáticamente al espacio disponible.
+En este caso, asegura que las columnas tengan el mismo ancho 
+y se alineen correctamente.*/
+/* */
