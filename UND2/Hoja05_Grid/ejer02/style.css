@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    /*tres columnas del mismo tamaño, el fr es el alto */
+    grid-template-columns: repeat(3,1fr);
+    /*filas 3*/
+    grid-template-rows: repeat(3,1fr);
+    width: 50%;
+    /*poner centrado*/
+    margin:0auto;
+    /*relleno entre celdas espacios en blanco*/
+    gap:2px;
+}
+
+.container div:first-child{
+    /*que ocupe desde la columna 1 hasta la 4*/
+    grid-column:1/4;
+}
+
+/*diseño de las casillas*/
+.container div{
+background-color: rgb(163, 204, 206);
+color: black;
+text-align: center;
+}
+
+/*celda 2*/
+#celda2{
+    /*ocupa solo la primera columna*/
+    grid-column: 1;
+    /*desde la fila 2 hasta la 4*/
+    grid-row: 2/4;
+}

@@ -1,0 +1,51 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, fit-content(100px));
+    grid-template-rows:  repeat(3,fit-content(100px));;
+    border: 1px solid black;
+
+}
+ 
+.container div:first-child {
+    background-color: greenyellow;
+    align-self:start;
+
+}
+ 
+.container > div {
+    border: 1px solid saddlebrown;
+    background-color: chocolate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

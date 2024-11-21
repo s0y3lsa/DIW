@@ -9,8 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0; /* Fondo general */
-    display: flex; 
-    align-items: center; /* Centra el diseño verticalmente */
+    
    
 }
 
@@ -19,19 +18,18 @@ body {
 }
 #menu{
     padding: 10px; /* Espaciado interno */
-    width: 12.5%; /* El sidebar ocupa 1/9 del ancho total (1:8 de la relación con el contenido) */
     background-color: #81d4fa; /* Fondo del sidebar */
     flex:1; 
-    
 }
 
 #menu ul {
     list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
 }
 
 #menu li{
     border-bottom: 1px solid grey;
-    
     margin-bottom: 10px; /* Espacio entre los elementos del menú */
 }
 
@@ -45,6 +43,7 @@ body {
     
     background-color: #c8e6c9; /* Fondo del contenido principal */
     padding: 20px; /* Espaciado interno */
-    height: 100%;
+    flex:8;
     color: #000;
+   
 }

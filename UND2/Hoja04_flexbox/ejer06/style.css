@@ -10,10 +10,23 @@ body {
     background-color: #f4f4f4;
 }
 
-#tarjetas-contenedor{
+
+#tarjetas{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     width: 90%;
     max-width: 1200px;
+}
+
+#tarjeta{
+    display: flex;
+    flex-direction: none;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+#tarjeta-titulo{
+    height: 40px;
+    
 }
