@@ -1,0 +1,137 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background: url('img/img1.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .call-to-action {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .call-to-action:hover {
+    background-color: #0056b3;
+  }
+  
+  /*menu*/
+  nav {
+    background-color: #2d4f99;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  /**/
+  .main-content {
+    padding: 20px;
+  }
+  
+  .gallery {
+
+    
+    display: grid; /*organizar los elementos hijos en filas y columnas.*/
+    grid-template-columns: 1fr; /*coloca los elementos en una sola columna.*/
+    gap: 20px; /*espacio de 20px entre las filas y columnas */
+  }
+  
+  .gallery article img {
+    width: 100%;
+    height: auto;
+    display: block; /* Cambia el comportamiento predeterminado de la imagen a "bloque". */
+  }
+  
+ /*pie de pagina*/
+  .footer {
+    background-color:  #2d4f99;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  /* Contacto */
+.footer .contact form {
+  display: grid;
+  gap: 10px;
+}
+
+.footer .contact input, 
+.footer .contact button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.footer .contact button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer .contact button:hover {
+  background-color: #0056b3;
+}
+/**/
+  .footer h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .social img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    /*
+    - Ahora tendrá 4 columnas de igual tamaño.
+    `repeat(4, 1fr)` significa que se repiten 4 columnas,
+    cada una ocupando 1 fracción del espacio total disponible. */
+    
+    .footer {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
