@@ -1,61 +1,18 @@
-.container{
-    display: grid;
-    /*tres columnas del mismo tamaño, el fr es el alto */
-    grid-template-columns: repeat(5,100px);
-    /*filas 3*/
-    grid-template-rows: repeat(3,85px);
-    width: 50%;
-    /*poner centrado*/
-    margin:0auto;
-    /*relleno entre celdas espacios en blanco*/
-    gap:2px;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
     
 }
 
-.container div:first-child{
-    /*que ocupe desde la columna 1 hasta la 4*/
-    grid-column:1/4;
-    background-color: black;
-    color: white;
-    padding: 20px;
-}
-
-#user{
-    background-color: blue;
-}
-#clipboard{
-    background-color: rgb(58, 173, 194);
-}
-#mail{
-    background-color: rgb(226, 226, 104);
-}
-
-#persona{
-    background-image: url("persona.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#teclado{
-    background-image: url("teclado.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#all{
-    background-image: url("all.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#empleos{
-    background-image: url("empleo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    grid-column: 1/3;
-}
-#redes{
-    background-image: url("redes.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    grid-column: 4/6;
+.container{
+    display: grid;
+    /*tres columnas del mismo tamaño, el fr es el alto */
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,85px);/*filas 3*/
+    width: 80%;
+    height: 100vh;/*rellenar toda la ventana*/
+    justify-content: center;  
 }
 div{
     padding: 20px;
@@ -67,5 +24,112 @@ div{
     background-color: rgb(163, 204, 206);
     color: black;
     text-align: center;
- }
+}
+
+body{
+    /*tipo de fuente*/
+    font-family: "Merriweather", serif;
+}
+/*celda 1*/
+.container div:first-child{
+    grid-column:1/4;/*que ocupe desde la columna 1 hasta la 4*/
+    grid-row:1;
+    background-color: black;
+    color: rgb(252, 252, 252);
+    padding: 20px;
+    text-align: left; 
+}
+#celda1 span{
+    color: #a1e1e1 /*poner en azul el texto en azul*/
+}
+/*caja 2*/
+#user{
+    background-color: rgb(80, 131, 207);
+}
+#user p{
+    text-align: center;
+    font-size: 8px;
+    color: white;
+}
+/*caja 3*/
+#persona{
+    background-image: url("persona.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-column: 5/6;
+    grid-row:1;
+}
+/*caja 4*/
+#teclado{
+    background-image: url("teclado.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/*caja 5*/
+#clipboard{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(42, 161, 182);
+}
+#clipboard p{
+    text-align: center;
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+}
+/*caja 6*/
+#check{
+    background-color: rgb(110, 203, 219);
+}
+#check p{
+    text-align: center;
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+}
+/*caja 7*/
+#all{
+    background-image: url("all.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/*caja 8*/
+#mail{
+    background-color: rgb(236, 215, 118);
+}
+
+/*caja  9*/
+#empleos{
+    background-image: url("empleo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-column: 1/3; 
+    grid-row:3; /*fila 3*/
+}
+/*caja  10*/
+#mensaje{
+    background-color: rgb(98, 136, 194);
+}
+#mensaje p{
+    text-align: center;
+    font-size: 8px;
+    color: white;
+}
+
+/*caja  11*/
+#redes{
+    background-image: url("redes.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-column: 4/6;
+    grid-row:3; /*fila 3*/
+}
+
+/*otra manera de definir las imagenes*/
+/*
+.caja-3, .caja-4, .caja-7, .caja-9, .caja-11{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}/*
+
+
 

@@ -8,18 +8,32 @@ body {
   
   header {
     background: url('img/img1.jpg') no-repeat center center/cover;
+    background-size: cover; /*que ocupe todo*/
     color: white;
     text-align: center;
     padding: 20px;
+    /*que este centrado los bloques*/
+    justify-content: center;
+    align-items: center;
+
+    min-height: 150px;/*anchura de la imagen*/
   }
   
   header h1 {
     margin: 0;
   }
+  header button{
+    padding: 20px;
+    background-color: blue;
+    color : white;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+  }
   
   .call-to-action {
     background-color: #007BFF;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -29,17 +43,17 @@ body {
     background-color: #0056b3;
   }
   
-  /*menu*/
-  nav {
+  /*menu y pie poner mismo color*/
+  nav,footer {
     background-color: #2d4f99;
   }
   
   nav ul {
-    list-style: none;
+    list-style: none; /*quitar los puntos*/
     margin: 0;
     padding: 20px;
-    display: flex;
-    margin-bottom: 50px;
+    display: flex; 
+    margin-bottom: 50px; /*separar los bloque de abajo*/
   }
   
   nav li {
@@ -47,8 +61,8 @@ body {
   }
   
   nav a {
-    color: white;
-    text-decoration: none;
+    color: rgb(243, 156, 43);
+    text-decoration: none; /*quitar subrayado*/
   }
   /**/
   .main-content {
@@ -57,7 +71,6 @@ body {
   
   .gallery {
 
-    
     display: grid; /*organizar los elementos hijos en filas y columnas.*/
     grid-template-columns: 1fr; /*coloca los elementos en una sola columna.*/
     gap: 20px; /*espacio de 20px entre las filas y columnas */
@@ -65,61 +78,64 @@ body {
   
   .gallery article img {
     width: 100%;
-    height: auto;
+   
     display: block; /* Cambia el comportamiento predeterminado de la imagen a "bloque". */
   }
   
  /*pie de pagina*/
   .footer {
-    background-color:  #2d4f99;
+    
     color: white;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
+
   }
   /* Contacto */
 .footer .contact form {
   display: grid;
   gap: 10px;
+  width: 40%;
 }
-
 .footer .contact input, 
 .footer .contact button {
-  padding: 10px;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
   font-size: 16px;
 }
-
 .footer .contact button {
   background-color: #007BFF;
   color: white;
   border: none;
   cursor: pointer;
 }
-
 .footer .contact button:hover {
   background-color: #0056b3;
 }
 /**/
-  .footer h3 {
+.footer h3 {
     margin: 0 0 10px 0;
   }
-  
-  .footer a {
+
+.footer a {
     color: white;
     text-decoration: none;
   }
   
-  .footer a:hover {
+.footer a:hover {
     text-decoration: underline;
   }
   
-  .footer .social img {
+.footer .social img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-  }
-  
+}
+li{
+  list-style: none; /*quitar los puntos*/
+}
+
   /* Responsive */
   @media (min-width: 768px) {
     .gallery {
@@ -134,4 +150,53 @@ body {
       grid-template-columns: 1fr 1fr;
     }
   }
-  
+
+/*Hacer en casa*/
+/*
+  @media screen and(max-widht:767px){
+      header button{
+        padding: 10px;
+      }
+      li{
+        text-align: center;
+        padding: 10px; /*relleno cada elemento
+        }
+      .gallery {
+        padding: 50px;
+      }
+      footer h2{
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 20px;
+      }
+      .gallery img{
+        width:100px;
+      }
+      footer form{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 100px;
+        background-color: white;
+        text-align: center;
+      }
+      footer form label{
+        width: 100%;
+      }
+      footer form input [type="submit"]{
+        background-color: blue;
+        color: chocolate;
+        margin: 0 auto;
+      }
+  }*/
+  /*
+  @media screen and (min-width: 768px){
+      header button{
+        padding: 10px 100px;
+      }
+      nav li{
+
+        
+
+      }
+
+  }

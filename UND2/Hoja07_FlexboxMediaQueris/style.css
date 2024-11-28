@@ -1,0 +1,43 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: #00b809;
+}
+
+/*menu encabezado*/
+header nav{
+    
+}
+
+header nav ul{
+    list-style: none; /*quitar los puntos*/
+    display: flex;
+    text-align: right;
+}
+
+.menu-lateral{
+    
+}
+
+.menu-lateral ul{
+    list-style: none; /*quitar los puntos*/
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.menu-lateral li{
+    /*border-bottom: 1px solid rgb(128, 128, 128);*/
+    margin-bottom: 10px; /* Espacio entre los elementos del menú */
+}
+
+.contenedor-princial{
+    display: flex;
+    
+}
+
