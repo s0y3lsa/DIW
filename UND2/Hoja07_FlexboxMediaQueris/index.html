@@ -8,67 +8,79 @@
 </head>
 <body>
 
-    <header>
+    <header class="cabecera">
+        <div>
             <h2>Menús</h2>
-            <nav>
+        </div>
+            
+            <nav id="menuNav">
                 <ul>
-                    <li>Opcion 1</li>
-                    <li>Opcion 2</li>
-                    <li>Opcion 3</li>
-                    <li>Opcion 4</li>
+                    <li><a href="#">Opcion 1 </a>
+                            <ul class="submenu">
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#">Opcion 2</a></li>
+                    <li><a href="#">Opcion 3</a></li>
+                    <li><a href="#">Opcion 4</a></li>
                     <li>Opcion 5</li>
                 </ul>
             </nav>
+
     </header>
     
 
-    <main>
-        <aside class="menu-lateral">
-            <h3>Enlaces</h3>
-            <ul>
-                <li>Mensajes</li>
-                <li>Perfil</li>
-                <li>Exportar</li>
-                <li>Importar</li>
-            </ul>
-        </aside>
-        <section class="contenedor-principal">
-
-            <article class="articulo-1">
+    <main>        
+        <section id="contenedor-principal">
+            <article>
                 <h2>Artículo 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima adipisci nesciunt soluta maxime nisi provident amet saepe unde suscipit magnam modi rerum nam magni voluptatibus cum, vel neque vitae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima adipisci 
+                    nesciunt soluta maxime nisi provident amet saepe unde suscipit magnam modi 
+                    rerum nam magni voluptatibus cum, vel neque vitae.</p>
             </article>
 
-            <article class="articulo-2">
+            <article>
                 <h2>Artículo 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima adipisci nesciunt soluta maxime nisi provident amet saepe unde suscipit magnam modi rerum nam magni voluptatibus cum, vel neque vitae.</p>
             </article>
 
-            <artcile class="articulo-3">
+            <artcile>
                 <h2>Artículo 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima adipisci nesciunt soluta maxime nisi provident amet saepe unde suscipit magnam modi rerum nam magni voluptatibus cum, vel neque vitae.</p>
             </artcile>
 
-
-            <artcile class="articulo-4">
+            <artcile>
                 <h2>Artículo 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima adipisci nesciunt soluta maxime nisi provident amet saepe unde suscipit magnam modi rerum nam magni voluptatibus cum, vel neque vitae.</p>
             </artcile>
 
-            <artcile class="articulo-5">
+            <artcile>
                 <h2>Artículo 5</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima adipisci nesciunt soluta maxime nisi provident amet saepe unde suscipit magnam modi rerum nam magni voluptatibus cum, vel neque vitae.</p>
             </artcile>
 
-            <artcile class="articulo-6">
+            <artcile>
                 <h2>Artículo 6</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima adipisci nesciunt soluta maxime nisi provident amet saepe unde suscipit magnam modi rerum nam magni voluptatibus cum, vel neque vitae.</p>
             </artcile>
 
         </section>
+
+        <aside class="menu-lateral">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#">Mensajes</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Exportar</a></li>
+                <li><a href="#">Importar</a></li>
+            </ul>
+        </aside>
     </main>
 
     <footer>
+
         <section class="caja-1">
             <h2>Informacion del Curso</h2>
             <p>Curso de Desarrollo de Aplicaciones Web 2 (DAW2)</p>

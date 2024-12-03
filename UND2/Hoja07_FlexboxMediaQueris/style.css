@@ -1,43 +1,134 @@
-*{
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*no se sumen al tamaño el margin y el padding*/
+    
+}
+html{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size:0.9em;
+    --green-50: #e7ffe4;
 }
 
-
-header{
+header  {
     background-color: #00b809;
+    height: 60px;
 }
-
-/*menu encabezado*/
-header nav{
-    
-}
-
-header nav ul{
-    list-style: none; /*quitar los puntos*/
+header .cabecera>div{
+    margin:0 15%;
+    background-color: #00b809;
     display: flex;
-    text-align: right;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 0 0 5px 5px;
+    align-items: flex-end;
+}
+nav  a{
+    text-decoration: none;
 }
 
-.menu-lateral{
-    
-}
-
-.menu-lateral ul{
-    list-style: none; /*quitar los puntos*/
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-.menu-lateral li{
-    /*border-bottom: 1px solid rgb(128, 128, 128);*/
-    margin-bottom: 10px; /* Espacio entre los elementos del menú */
-}
-
-.contenedor-princial{
+nav ul{
+    list-style-type: none; /*quitar los puntos*/
+    margin-top:30px;
+    margin-right: 0px;
+    margin-bottom: 6px;
     display: flex;
+    justify-content: space-between;
     
+}
+nav li{
+    padding: 5px;
+}
+nav ul li:hover{
+    outline-style: solid;
+    outline-width: 1px;
+    background-color: #00ff00;
+    border-radius: 5px;
+    color:#00b809;
+}
+main{
+    margin:10px 15%;
+    display:flex;
+    flex-direction: row;
+}
+
+aside{
+    background-color: #e7ffe4;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    align-self: flex-start; /*se alinea el aside solo, lo deja arriba del contenedor*/
+    margin-left: 5px;
+}
+aside ul{
+    list-style-type: none;
+
+}
+aside h3{
+    text-decoration: underline;
+}
+aside a{
+    text-decoration: none;
+}
+aside a:hover{
+    text-decoration: underline overline;
+
+}
+#contenedor-principal{
+    display: flex;
+    flex-wrap: wrap; /*si no entra en una fila te lo pone a la siguiente*/
+    gap:10px;
+}
+#contenedor-principal article{
+    flex:0 0 200px; /*flex 1º= */
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+#contenedor-principal article h2{
+    margin-top:0;
+}
+#contenedor-principal article p{
+    text-align: justify;
+}
+
+footer{
+    margin: 0 15%;
+    background-color: #00b809;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+footer section{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-basis: 45%;
+    background-color: #00b606;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative; /**/
+    padding: 5px 15px;
+    margin-right: 10px
+}
+nav ul li .submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    border-radius: 5px;
+    margin:0;
+    width: 150px;
+    z-index: 1000;
+    background-color: #00b606;
+}
+nav ul li:hover .submenu{
+    display: block; /*para que aparezcan en bloque*/
 }
 
