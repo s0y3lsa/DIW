@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:  #c6991c;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 15px; /*por arriba y por abajo 5px y por la izquierda y derecha 15px*/
+    align-items: center;
+    border-radius: 10px;
+    height: 110px; /*altura de la cabecera*/
+    
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav{
+    display: flex; 
+    align-self: flex-end; /*poner los elementos hacia abajo*/
+}
+/*poner cuadrados*/
+nav ul li{
+    border-radius: 5px; /*poner borde*/
+    background-color: antiquewhite; /*color de fondo del cuadrado*/
+    padding: 5px; /*anchura del recuadro*/
+    margin: 1px; /* para separar los elementos*/
+}
+
+/*poner los recuadros al color cuando se pasa el cursor*/
+nav ul li:hover{
+    background-color: orange;
+}
+
+a{
+    color: #c6991c;
+}
+main{
+    padding: 10px;
+    display: grid; /*poner todo pegado hacia la izquierda*/
+    gap:20px; /*seperar elementos*/
+    grid-template-columns: 1fr 2fr 1fr; /*me hace tres columnas el primero ocupa una pequeña parte y el segundo el doble*/
+}
+
+#contenedor-1 img{
+    float: left;
+    margin: 0 10px;
+}
+
+#contenedor-1{
+    margin-bottom: 10px;
+}
+
+img{
+    max-width: 80px;
+}
+
+#menu-izquierdo{
+   flex-direction: column; /*poner elementos en columna*/
+   display: flex;
+   gap: 20px;
+   
+}
+
+#menu-izquierdo h3{
+    border-radius: 5px; /*poner borde*/
+    background-color:  #c6991c; /*color de fondo del cuadrado*/
+    color:white;
+    padding: 5px;
+    
+}
+#unidades-trabajo{
+    display: flex; /*complemento*/
+    flex-direction: column; /*poner en columna*/
+
+}
+#unidades-trabajo h3{
+    margin-bottom: 10px;
+}
+#unidades-trabajo p{
+    color: #c6991c;
+}
+section{
+    padding: 20px;
+}
+section h3{
+    margin-bottom: 10px;
+    border-radius: 5px; /*poner borde*/
+    background-color:  #c6991c; /*color de fondo del cuadrado*/
+    padding: 10px;
+    color: white;
+}
+
+#seccion-derecha h3{
+    border-radius: 5px; /*poner borde*/
+    background-color:  #c6991c; /*color de fondo del cuadrado*/
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+#seccion-derecha ul{
+  margin-left: 20px;
+  color: #c6991c;
+   
+}
+#seccion-derecha{
+    gap:20px;
+}
+
+footer{
+    padding: 20px;
+    border:2px solid #c6991c ;
+    border-radius: 5px;
+    margin: 30px;
+}
+footer p{
+    text-align: center;
+}
