@@ -46,6 +46,12 @@ main{
     gap:20px; /*seperar elementos*/
     grid-template-columns: 1fr 2fr 1fr; /*me hace tres columnas el primero ocupa una pequeña parte y el segundo el doble*/
 }
+/*linea de puntos*/
+hr{
+    border-style: dashed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 #contenedor-1 img{
     float: left;
