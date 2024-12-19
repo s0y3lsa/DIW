@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(cabecera.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    height: 300px; /* Puedes ajustar la altura según necesites */
+    display: flex;
+    justify-content: center; /*situar en el centro*/
+    align-items: center;
+    padding: 20px;
+   
+}
+header h3{
+    
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.384);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+nav{
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+a{
+    color: white;
+}
+img{
+    height: 180px;
+}
+main{
+    padding: 20px;
+}
+#seccionPrimera{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    
+}
+article{
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(22, 20, 20, 0.445); /* Sombra para destacar */
+    width: 40%; /*ajustar al tamaño de la imagen*/
+}
+article p{
+    text-align: center;
+}
+#seccionPrimera h3{
+    text-align: center;
+}
+
+#seccionSegunda {
+    padding: 20px;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto; /**/
+    width: 30%; /*ajustar al tamaño de la imagen*/
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+#seccionSegunda p{
+    text-align: center;
+    
+}
+#seccionSegunda img{
+
+    display: flex;
+    align-items: center;
+}
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+form{
+  
+    font-size: 15px;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    
+}
