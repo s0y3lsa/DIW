@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*poner al centro */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div{
+    width: 80px;
+    height: 80px;
+    border: 10px solid grey;
+    border-top: 10px solid blue;
+    border-radius: 100%;
+    animation: spinner 1s linear infinite;
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}

@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*que ocupe toda la pantalla*/
+    background-color: azure;
+}
+
+.animado{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 10px;
+    animation: mover 5s linear infinite; /*nombre,segundos,tiempo de animacion,las veces de repeticion*/
+}
+
+@keyframes mover{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(500px);}
+    100%{transform: translateX(0);}
+}
