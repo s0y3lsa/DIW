@@ -33,7 +33,6 @@ body{
 
 h1{
     padding: 10px;
-
     justify-items: center;
     align-items: center;
     display: flex;
@@ -64,6 +63,9 @@ img:hover{
 footer{
     margin: 20px 0;
 }
+
+
+
 .boton-aimado{
     padding: 15px 30px;
     font-size: 18px;
@@ -96,3 +98,4 @@ footer{
     }
     
 }
+
