@@ -5,6 +5,7 @@
 }
 
 body{
+    height: 100vh;
     font-size: 16px;
     background-image: url(img/fondo.jpg);
     background-repeat: no-repeat;
@@ -20,11 +21,29 @@ header{
     padding: 20px;
 }
 header h2{
-    font-size: 25px;
+    font-size: 40px;
     color: white;
     display: flex;
-    
 }
+/*Animacion 5*/
+.typing-effect {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+    animation: typing 3s steps(30) infinite, parpadeo 0.5s step-end infinite;
+}
+/*efecto de escribir*/
+@keyframes typing {
+    from { width: 0; }
+    to { width: 120%; }
+}
+/*cursor parpadeante*/
+@keyframes parpadeo {
+    50% { border-color: transparent; }
+}
+
 nav{
     width: 100%;
     justify-content: center;
@@ -87,7 +106,6 @@ a{
 .animal p{
         font-size: 14px; /* Tamaño de texto más pequeño */
         margin: 10px 0 0 0; /* Margen superior reducido */
-    
 }
 #fotosParque{
     text-align: center;
@@ -99,11 +117,10 @@ a{
 .especies{
     
     padding: 20px;
-    margin: 15px;
+    margin: 70px;
     background-color: rgb(178, 224, 178);
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
-    
     justify-content: center;
     align-items: center;
     
@@ -138,10 +155,89 @@ a{
     padding: 10px;
     
 }
-footer{
-    background-color: rgb(178, 224, 178);
-    padding: 20px;
+
+.animaciones{
     display: flex;
+    background-color: rgb(178, 224, 178);
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 6px;
     
 }
+.animaciones img{
 
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+.animacion-1 {
+    animation: crecer 2s infinite;
+}
+@keyframes crecer {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+.animacion-2{
+    animation: aparecer 4s infinite;
+}
+@keyframes aparecer {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.animacion-3{
+    animation: rotar 2s infinite;
+}
+@keyframes rotar {
+    0%, 100% { transform: rotate(0); }
+    50% { transform: rotate(10deg); }
+}
+.animacion-4{
+    border-radius: 50%; /* Inicialmente circular */
+    animation: cambiarBorde 2s infinite alternate;
+}
+.animacion-4 img{
+    border-radius: inherit;
+}
+@keyframes cambiarBorde {
+    0% {
+      border-radius: 50%; /* Circular */
+    }
+    100% {
+      border-radius: 0; /* Cuadrado */
+    }
+}
+
+.mapa{
+    
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.mapa img:hover{
+transform: scale(1.1); /* Aumenta el tamaño al 200% */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+footer{
+    margin: 70px;
+   
+    background-color: rgb(178, 224, 178);
+    padding: 20px 10px;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.formulario{
+    display: flex;
+    padding: 20px 10px;
+    margin: 10px;
+    gap: 10px;
+    align-items: center; /*centrar items*/
+    flex-direction: column;
+}
+.formulario input{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+
+}
