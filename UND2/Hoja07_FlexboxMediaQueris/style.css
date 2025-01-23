@@ -61,6 +61,12 @@ nav ul li:hover{
     border-radius: 5px;
     color:#00b809;
 }
+nav ul li{
+    display: inline-block;
+    position: relative; /**/
+    padding: 5px 15px;
+    margin-right: 10px
+}
 main{
     margin:10px 15%;
     display:flex;
@@ -126,12 +132,7 @@ footer section{
     background-color: #00b606;
 }
 
-nav ul li{
-    display: inline-block;
-    position: relative; /**/
-    padding: 5px 15px;
-    margin-right: 10px
-}
+
 nav ul li .submenu{
     display: none;
     position: absolute;

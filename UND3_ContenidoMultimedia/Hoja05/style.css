@@ -6,9 +6,16 @@
 
 body{
     font-size: 16px;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*que ocupe todo*/   
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    background-position: center; /* Centra la imagen */
 }
 header{
+  
     background-color: rgb(38, 109, 85);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
     display: flex;
     padding: 20px;
 }
@@ -46,16 +53,9 @@ a{
     display: flex;
     border: 2px solid black;
     border-radius: 20px;
-    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: box-shadow 0.3s ease-in-out;
 }
-
-img{
-    width: 350px;
-    border: 3 solid black;
-    border-radius: 10px;
-    
-}
-
 .general{
     display: flex;
     flex-direction: row; /*poner la disposion en columna*/
@@ -63,27 +63,85 @@ img{
     justify-content: center;
     padding: 20px;
     margin: 10px;
-    
-
 }
 .animal{
+    height: auto; /* Ajuste automático según el contenido */
     width: fit-content;
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 15px; /* Espaciado interno reducido */
     background-color: rgb(178, 224, 178);
-    border: 2px solid black;
+    display: inline-block; /* Permite alinearlos horizontalmente */
+    text-align: center; /* Centra el contenido */
     border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease-in;
 }
-p{
-    padding: 10px;
-    width: 70%;
+.animal img {
+    width: 95%; /* La imagen ocupará el ancho del recuadro */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
 }
-
+.animal:hover{
+    transform : scale( 1.1);
+}
+.animal p{
+        font-size: 14px; /* Tamaño de texto más pequeño */
+        margin: 10px 0 0 0; /* Margen superior reducido */
+    
+}
 #fotosParque{
     text-align: center;
     padding: 20px;
     font-size: 30px;
+    color: white;
 
+}
+.especies{
+    
+    padding: 20px;
+    margin: 15px;
+    background-color: rgb(178, 224, 178);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    
+    justify-content: center;
+    align-items: center;
+    
 
+}
+.especies h2{
+    
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    display: inline-block; /* Ajusta el ancho al contenido del texto */
+    border-radius: 4px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black; /* Define el borde con un estilo sólido */
+    
+    padding: 10px; /* Reduce el espacio interno para ajustar el borde al texto */
+    margin: 5px; /* Ajusta el espacio externo según sea necesario */
+   
+}
+
+.especies video{
+    width: 30%;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    border: 1px solid black;
+    border-radius: 5px;
+   
+}
+.video{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+footer{
+    background-color: rgb(178, 224, 178);
+    padding: 20px;
+    display: flex;
+    
 }
 

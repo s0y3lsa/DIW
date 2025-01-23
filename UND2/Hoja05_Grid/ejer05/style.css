@@ -9,6 +9,7 @@
     display: grid;
     /*tres columnas del mismo tamaño, el fr es el alto */
     grid-template-columns: repeat(5,1fr);
+    /*3 filas*/
     grid-template-rows: repeat(3,85px);/*filas 3*/
     width: 80%;
     height: 100vh;/*rellenar toda la ventana*/
