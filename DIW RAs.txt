@@ -1,0 +1,7 @@
+DIW: 
+RA1 
+
+RA2: Grid, flex, Bootstrap
+RA3: Animaciones, transiciones,audios
+RA4: JavaScrip
+RA5: Accesibilidad
