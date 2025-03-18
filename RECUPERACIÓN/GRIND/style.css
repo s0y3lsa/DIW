@@ -1,0 +1,41 @@
+
+header{
+    grid-area: cabecera;
+    border: 1px solid chocolate;
+    background-color: burlywood;
+}
+
+aside{
+    grid-area:menu;
+    border: 1px solid chocolate;
+    background-color: burlywood;
+}
+
+main{
+    grid-area: principal;
+    border: 1px solid chocolate;
+    background-color: burlywood;
+}
+
+section{
+    grid-area: derecha;
+    border: 1px solid chocolate;
+    background-color: burlywood;
+}
+
+footer{
+    grid-area: pie;
+    border: 1px solid chocolate;
+    background-color: burlywood;
+}
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera"/*fila 1*/
+    "menu principal princial derecha" /*fila 2*/
+    "menu pie pie pie "; /*fila 3*/
+    gap: 10px; /*separacion*/
+    background-color: chocolate;
+    border:1px solid brown;
+    min-height: 100vh;
+}

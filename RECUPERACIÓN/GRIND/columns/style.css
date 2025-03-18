@@ -1,0 +1,20 @@
+
+
+.contenedor{
+    display: grid;
+    width: 2;
+    grid-template-columns: 300px 1fr 2fr; /*1fr es el tamaño de por defecto */
+    grid-template-rows: 50px 1fr 1fr;
+    background-color: chocolate;
+    border:1px solid brown;
+}
+
+.contenedor>div{
+    border: 1px solid brown;
+    background-color: chocolate;
+}
+
+.contenedor .primero{
+    background-color: greenyellow;
+    grid-area: 2/  1 / 4 / 3; /* fila inicial, columna inicial, fila final,columna final*/
+}
