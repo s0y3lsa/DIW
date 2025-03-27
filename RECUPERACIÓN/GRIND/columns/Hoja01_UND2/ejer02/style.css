@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 1fr auto;
+    gap: 5px;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    background: black;
+    padding: 10px;
+}
+
+
+.header{
+    grid-column: 1/-1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.marketing{
+    background: #007bff;
+    color: white;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casos-exito{
+    background-color: #f2b705;
+    color: white;
+    grid-column: 3/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clientes{
+    color:white;
+    background-color:  #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-nosotros{
+    background-color:#0a2a72 ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactanos{
+    background-color: #f2b705;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios{
+    background-color: #f2b705;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: (3,1fr); 
+    background-color: black;
+}
+
+
+.blog {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.nuestros-servicios {
+    background: #4f98ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+.redes {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
