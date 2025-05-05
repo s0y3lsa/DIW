@@ -1,0 +1,60 @@
+
+
+.caja{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caja h2{
+    font-size: 32px;
+    text-align: center;
+}
+.contenido{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:40px;
+    padding: 20px;
+}
+.tarjetas{
+    align-items: center;
+    display: flex;
+    gap:15px;
+    text-align: right;
+    flex-direction: row;
+}
+.tarjeta{
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.712);
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.tarjeta p{
+    color:  rgb(44, 195, 241);
+    font-size: 20px;
+    text-decoration: solid;
+}
+.tarjeta ul{
+    
+    text-align: left;
+    list-style: none;
+}
+
+
+.tarjeta button{
+    background-color: rgb(44, 195, 241);
+    color: white;
+    border: none;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: fit-content;
+}
+.tarjeta button:hover{
+    background-color: rgba(17, 98, 104, 0.829);
+
+}

@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: chocolate;
+}
+
+/*cuando lo pongamos en esos pixeles la pantalla cambiara*/
+@media (max-width: 480px){
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: lightgreen;
+    }
+}

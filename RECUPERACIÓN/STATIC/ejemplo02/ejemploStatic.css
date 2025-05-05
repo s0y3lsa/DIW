@@ -1,0 +1,64 @@
+
+
+
+.caja1{
+    background-color: rgb(169, 191, 223);
+    padding: 20px;
+}
+
+.caja2{
+    background-color: lightcoral;
+    padding: 20px;
+    position: relative;
+    top:20px;
+    left: 20px;
+}
+.caja3{
+    background-color: lightblue;
+    padding: 20px;
+    
+}
+
+.contenedor{
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 40px auto;
+    border: 2px solid gray;
+    position: relative;
+}
+
+.absoluto{
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/*contenido largo*/
+.margen{
+    margin-bottom: 800px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    line-height: 1.5;
+}
+.contenido-largo{
+    max-width: 600px;
+    margin: auto;
+}
+
+.boton-ayuda{
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    background-color: lightblue;
+    color: white;
+    padding: 15px;
+    border:none;
+    font-size: 14px;
+}

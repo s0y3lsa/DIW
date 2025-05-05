@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 300px;
+    background-image: url(img/ciudad.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+}
+header h1{
+    padding: 50px;
+}
+header button{
+    border-radius: 5px;
+    padding: 12px 28px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(33, 104, 151, 0.856);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(33, 104, 151, 0.856);
+    
+}
+nav ul{
+    color: orange;
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+    font-size: 19px;
+    display: flex;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    list-style: none;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: rgb(228, 183, 101);
+    
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 10px;
+}
+.imagenes img{
+    width: 150%;
+}
+
+footer{
+    background-color: rgba(33, 104, 151, 0.856);
+    align-items: flex-start; /*iconos alienados*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 150px;
+
+  
+}
+
+.formulario{
+    color: #ffcc99;
+    flex: 1;
+    
+    
+}
+.formElementos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.redes{
+    flex:1;
+}
+.redes img{
+    width: 20%;
+}
+.siguenos{
+    flex: 1;
+    color: #ffcc99;
+}
+
+footer h1{
+    color: #ffcc99;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+
+@media (max-width: 767px){
+
+    body{
+        margin: 0px;
+        padding: 0px;
+       
+    }
+}

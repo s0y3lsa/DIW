@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "contenido"
+    "pieDePagina";
+    grid-template-rows: auto 1fr auto; /*fila 1, fila 2, fila 3 */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(20, 163, 219);
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 30px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+.seccionSuperior{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;   
+    width: 90%;
+    gap: 10px;
+    justify-content: space-around;
+   
+}
+.seccionSuperior img{
+    
+    margin: 10px;
+    width: 170%;
+    border-radius: 10px;
+}
+.seccionSuperior button{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(20, 163, 219);
+    color: white;
+}
+
+.seccionSuperior h2{
+   color: rgb(11, 66, 88);
+   font-size: 30px;
+}
+
+.seccionMedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(214, 214, 210);
+    
+}
+.caja{
+    gap:20px;
+    border-radius: 10px;
+}

@@ -1,6 +1,6 @@
 
 footer{
-    height: 250px;
+    min-height: 250px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -11,7 +11,9 @@ footer{
 
 .vertical{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /*que haya espacio alrededor*/
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .horizontal{
@@ -21,25 +23,28 @@ footer{
     
 }
 /* Cada columna se alinea en vertical */
-.columnas{
+.columna{
     display: flex;
     flex-direction: column;
     gap:10px;
-    align-items: flex-start; /* Asegura que los enlaces no se centren */
+    
 }
 /* Títulos de las columnas */
-.columnas h1 {
+.columna h1 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
 /* Enlaces */
-.columnas a {
+.columna a {
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
+.columna li{
+    list-style: none;
+}
 /* Efecto hover */
-.columnas a:hover{
+.columna a:hover{
     text-decoration: underline;
 }
