@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(58, 56, 56);
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid:"area";
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:2rem;
+    padding: 20px;
+}
+
+.reportaje{
+    grid-column: 1/2; /*ocupa de la 1º columna hasta la 2ª columna*/
+    background-color: #1c1c1c;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.curiosidades{
+    grid-column: 1/2; /*ocupa de la 1º columna hasta la 2ª columna*/
+    background-color: #ddd0c0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.cajaDerecha{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cajaDerecha .caja {
+    background-color: #e5ddd3;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  /* Galería de imágenes con Flexbox */
+.galeria {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .cajaFila {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+    flex: 1;
+  }
+
+  .cajaFila img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  footer{
+    background-color: rgb(58, 56, 56);
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    
+  }
+.cajaPie{
+    padding: 10px;
+   
+
+}
+  footer ul{
+    list-style: none;
+  }

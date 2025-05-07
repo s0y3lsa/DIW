@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* toda la altura de la pantalla */
+}
+header{
+    background-color: rgb(124, 199, 174);
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+    justify-content: space-between;  /* para separar logo+texto del menú */
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:20px; /* separación entre imagen y texto */
+}
+.logo img{
+    width: 70px;
+    height: auto;
+}
+
+.menu{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li{
+    display: inline-block; /*Se alineen uno al lado del otro, como en un menú horizontal.*/
+    position: relative;
+}
+
+.menu li > a{
+    display: block;
+    color: white;
+    padding: 20px;
+}
+
+.menu > li:hover{
+    background-color: gray;
+    ul.submenu{
+        display: block;
+    }
+}
+
+ul.submenu{
+    display: none;
+    position: absolute; /*lo posiciona justo debajo del padre.*/
+    top:100%; /* lo pone justo debajo del elemento padre */
+    left:0%;
+    list-style:none;
+    background-color:rgb(97, 88, 88);
+    padding:0;
+    margin:0;
+    min-width:150px;
+}
+.submenu > li > a {
+    display:block;
+    padding:20px;
+    color:white;
+    text-decoration:none;
+}
+.submenu li a:hover{
+    background-color:lightslategray;
+}
+.menu a{
+    text-decoration: none;
+}
+
+.contenido{
+    flex: 1; /* se expande para empujar el footer al final */
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* ejemplo: izquierda más ancha que derecha */
+    max-width: 1200px; /* o 1000px o el valor que quieras */
+    margin: 0 auto; /* centra horizontalmente */
+    gap: 20px;
+   
+}
+    
+.parteSuperior {
+  
+    border: 1px;
+    border-radius: 10px; /* redondea todas las esquinas 10px */
+    padding: 20px;
+    background-color: rgb(235, 235, 228);
+    
+    gap:10px;
+    grid-column: 1/2;
+    font-size: 18px;
+}
+.parteSuperior img{
+    margin: 10px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.parteInferior{
+    border: 1px;
+    border-radius: 10px; /* redondea todas las esquinas 10px */
+
+    grid-column: 1/2;
+    padding: 20px;
+    gap:20px;
+    background-color: rgb(204, 168, 168);
+   
+}
+
+
+.parteDerecha{
+
+    border: 1px;
+    border-radius: 10px; /* redondea todas las esquinas 10px */
+    gap:20px;
+    padding: 40px;
+    background-color: rgb(191, 203, 214);
+    grid-column: 2/3;
+}
+
+.parteDerecha ul{
+    list-style: none;
+    font-size: 16px;
+}
+
+.parteDerecha li{
+    font-size: 20px;
+}
+.parteDerecha a{
+    text-decoration: none;
+    color: rgb(177, 130, 130);
+}
+footer{
+   padding: 20px;
+    background-color: rgb(124, 199, 174);
+ 
+}
+
+.pieSuperior{
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+
+    
+}
+
+footer .pieInferior{
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    
+}
+footer button{
+    padding: 15px;
+    
+    border: 1px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(155, 211, 192);
+}
+.pieInferior ul{
+    list-style: none;
+    
+}
+
+.pieInferior a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}

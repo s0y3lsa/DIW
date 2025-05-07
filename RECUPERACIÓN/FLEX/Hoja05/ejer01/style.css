@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "cabecera"
+        "contenido"
+        "pieDePagina";
+    grid-template-rows: auto 1fr auto;
+    /*fila 1, fila 2, fila 3 */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(16, 108, 145);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.seccionSuperior {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 90%;
+    gap: 10px;
+    justify-content: space-around;
+
+}
+
+.seccionSuperior img {
+
+    margin: 10px;
+    width: 170%;
+    border-radius: 10px;
+}
+
+.seccionSuperior button {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(20, 163, 219);
+    color: white;
+}
+
+.seccionSuperior h2 {
+    color: rgb(11, 66, 88);
+    font-size: 30px;
+}
+
+.seccionMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.caja {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    border: 1px;
+    background-color: rgb(240, 240, 235);
+    border-radius: 10px;
+}
+
+.caja h1 {
+    color: rgb(16, 108, 145);
+}
+
+.seccionInferior {
+    background-color: rgb(236, 236, 232);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    padding: 30px;
+}
+
+.etiqueta {
+    padding: 5px;
+    margin: 5px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: rgb(209, 214, 224);
+}
+
+footer{
+    color:azure;
+}
+
+.pieSuperior{
+    background-color: rgb(16, 108, 145);
+    text-align: center;
+    padding: 20px;
+}
+.pieSuperior button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: azure;
+    font-size: 20px;
+    border: none;
+}
+
+.pieInferior{
+    background-color: rgb(5, 43, 58);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+ 
+}
+.pieInferior ul{
+    list-style: none;
+    
+}
+.pieInferior ul a{
+    color: white;
+    text-decoration: none;
+}
